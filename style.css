@@ -1,0 +1,12 @@
+.container {
+  display: flex; /* or inline-flex */
+}
+#main-image {
+  margin: 0;
+  padding: 0;
+  max-height: 100vh;
+  width: auto;
+}
+.textside {
+  flex-direction: column;
+}
