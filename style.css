@@ -1,12 +1,51 @@
-.container {
-  display: flex; /* or inline-flex */
+:root {
+  --color: #e6007e;
+  --txt: #894224;
 }
-#main-image {
-  margin: 0;
-  padding: 0;
-  max-height: 100vh;
-  width: auto;
+
+@font-face {
+  font-family: myFirstFont;
+  src: url(fonts/milky_coffee-webfont.woff2);
 }
+
 .textside {
+  background-color: #faddd8;
+}
+
+h1 {
+  font-family: myFirstFont;
+}
+
+.picture {
+  background-image: url(./rodion-kutsaiev-iqJmuMWD0G4-unsplash.jpg);
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 40vw;
+  display: flex;
   flex-direction: column;
+  align-content: center;
+  justify-content: center;
+}
+
+.logo {
+  display: flex;
+  height: auto;
+  background-color: rgba(255, 255, 255, 0.7);
+  gap: 1vw;
+  padding: 15px 0;
+  justify-content: center;
+  align-content: center;
+  justify-self: center;
+  align-items: center;
+  justify-content: center;
+}
+
+.cake {
+  height: 50px;
+}
+
+.content {
+  display: flex;
+  height: 100vh;
 }
