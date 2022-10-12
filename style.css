@@ -15,7 +15,6 @@ body {
 }
 
 .textside {
-  background-color: #faddd8;
 }
 
 h1 {
@@ -32,6 +31,7 @@ h1 {
   flex-direction: column;
   align-content: center;
   justify-content: center;
+  flex-shrink: 0;
 }
 
 .logo {
@@ -53,4 +53,42 @@ h1 {
 .content {
   display: flex;
   height: 100vh;
+}
+
+form {
+  gap: 20px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.input {
+  display: flex;
+  flex-flow: column wrap;
+  width: 40%;
+  font-size: 0.7rem;
+  text-transform: uppercase;
+  opacity: 50%;
+}
+
+.form-title {
+  width: 100%;
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+
+.rightside {
+  display: flex;
+  flex-direction: column;
+  background-color: #faddd8;
+  justify-content: space-between;
+}
+
+#middle {
+  display: inline-grid;
+  grid-template-columns: auto;
+}
+
+label {
+  grid-column-start: 2;
+  grid-column-end: 2;
 }
