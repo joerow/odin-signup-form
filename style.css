@@ -1,6 +1,12 @@
 :root {
   --color: #e6007e;
   --txt: #894224;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  margin: 0;
 }
 
 @font-face {
@@ -19,7 +25,7 @@ h1 {
 .picture {
   background-image: url(./rodion-kutsaiev-iqJmuMWD0G4-unsplash.jpg);
   background-position: center;
-  background-size: contain;
+  background-size: cover;
   background-repeat: no-repeat;
   width: 40vw;
   display: flex;
@@ -35,10 +41,9 @@ h1 {
   gap: 1vw;
   padding: 15px 0;
   justify-content: center;
-  align-content: center;
-  justify-self: center;
   align-items: center;
-  justify-content: center;
+  top: -20vh;
+  position: relative;
 }
 
 .cake {
