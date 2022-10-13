@@ -9,8 +9,8 @@
   </head>
   <body>
     <div class="content">
-      <div class="picture">
-        <div class="logo">
+      <div class="leftside">
+        <div class="banner">
           <img
             src="./cake_FILL0_wght400_GRAD0_opsz48.svg"
             alt="logo"
@@ -27,40 +27,42 @@
           </p>
           <p>You know you want to!</p>
         </div>
-        <div id='middle'>
-        <form action="" method="post">
-          <div>
-            <label for="fname">First name</label>
-            <input type="text" name="fname" id="fname" />
-          </div>
-          <div>
-            <label for="lname">Last name</label>
-            <input type="text" name="lname" id="lname" />
-          </div>
-          <div>
-            <label for="email">email</label>
-            <input type="email" name="email" id="email" />
-          </div>
-          <div>
-            <label for="phone">phone</label>
-            <input type="tel" name="phone" id="phone" />
-          </div>
-          <div>
-            <label for="password">password</label>
-            <input type="password" name="password" id="password" />
-          </div>
-          <div>
-            <label for="passwordConf">password confirmation</label>
-            <input type="passwordConf" name="passwordConf" id="passwordConf" />
-          </div>
-        </div>
-          <div id="botttom">
-            <div>
-              <button type="submit">Create Account</button>
+        <div id="middle">
+          <form action="" method="post">
+            <div id="names">
+              <label for="fname"
+                >First name<input type="text" name="fname" id="fname"
+              /></label>
+
+              <label for="lname">
+                Last name <input type="text" name="lname" id="lname"
+              /></label>
             </div>
-            <div>Already have an account? Log in?</div>
+            <label for="email"
+              >email<input type="email" name="email" id="email"
+            /></label>
+            <label for="phone"
+              >phone<input type="tel" name="phone" id="phone"
+            /></label>
+            <div id="passwords">
+              <label for="password"
+                >password<input type="password" name="password" id="password"
+              /></label>
+            </div>
+            <label for="passwordConf"
+              >password confirmation<input
+                type="passwordConf"
+                name="passwordConf"
+                id="passwordConf"
+            /></label>
+          </form>
+        </div>
+        <div id="bottom">
+          <div>
+            <button type="submit">Create Account</button>
           </div>
-        </form>
+          <div>Already have an account? Log in?</div>
+        </div>
       </div>
     </div>
   </body>
