@@ -10,6 +10,7 @@ body {
   width: 100vw;
   height: 100vh;
   background-color: #faddd8;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 @font-face {
@@ -17,8 +18,17 @@ body {
   src: url(fonts/milky_coffee-webfont.woff2);
 }
 
+@font-face {
+  font-family: mainfont;
+  src: url(fonts/milky_coffee-webfont.woff2);
+}
+
 h1 {
   font-family: myFirstFont;
+}
+
+p {
+  font-size: larger;
 }
 
 .leftside {
@@ -81,7 +91,12 @@ label {
 }
 
 #bottom {
+  display: flex;
+  flex-direction: column;
   margin-bottom: 3rem;
+  align-items: center;
+  justify-items: center;
+  justify-content: center;
 }
 
 input {
@@ -111,4 +126,26 @@ form {
 #passwords {
   display: flex;
   gap: 1rem;
+}
+
+button {
+  background-color: #fd2f43;
+  font-weight: 700;
+  font-size: 1.2em;
+  border: 2px solid var(--color);
+  border-radius: 5px;
+  padding: 10px 40px;
+  margin: 40px 0;
+  align-self: center;
+}
+
+button:hover {
+  background-color: var(--color);
+  color: black;
+}
+
+a {
+  text-decoration: none;
+  color: #fd2f43;
+  font-weight: bold;
 }
