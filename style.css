@@ -44,6 +44,12 @@ p {
   flex-shrink: 0;
 }
 
+.leftside p {
+  position: absolute;
+  align-self: flex-end;
+  bottom: 0px;
+  opacity: 50%;
+}
 .banner {
   display: flex;
   height: auto;
